@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'LinkController@index');
+
+Route::get('/submit', function () {
+    return view('submit');
 });
+
