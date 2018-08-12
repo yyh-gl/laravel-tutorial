@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LinkRequest;
-use Illuminate\Http\Request;
 
 class LinkController extends Controller
 {
@@ -16,7 +15,7 @@ class LinkController extends Controller
         return view('submit');
     }
 
-    public function create(Request $request) {
+    public function create(LinkRequest $request) {
         $link = new \App\Link;
         $link->title = $request->title;
         $link->url = $request->url;

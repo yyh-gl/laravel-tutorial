@@ -82,6 +82,8 @@
                     Laravel
                 </div>
 
+                <a href="/submit">Submit</a>
+
                 @foreach ($links as $link)
                     <li>{{ $link->title }}</li>
                 @endforeach
