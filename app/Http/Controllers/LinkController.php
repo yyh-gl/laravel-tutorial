@@ -21,7 +21,6 @@ class LinkController extends Controller
         $link->url = $request->url;
         $link->description = $request->description;
         $link->save();
-
         return redirect('/');
     }
 }
