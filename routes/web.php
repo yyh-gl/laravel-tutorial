@@ -12,8 +12,6 @@
 */
 
 Route::get('/', 'LinkController@index');
-
-Route::get('/submit', function () {
-    return view('submit');
-});
+Route::get('/submit', 'LinkController@submit');
+Route::post('/submit', 'LinkController@create');
 
